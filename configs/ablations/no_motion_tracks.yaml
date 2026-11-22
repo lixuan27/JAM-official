@@ -1,0 +1,3 @@
+include: [../base.yaml]
+objective:
+  disable_consequence: true

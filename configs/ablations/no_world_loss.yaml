@@ -1,0 +1,3 @@
+include: [world_loss_reference.yaml]
+objective:
+  lambda_world: 0.0

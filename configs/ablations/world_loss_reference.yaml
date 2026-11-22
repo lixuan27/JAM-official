@@ -1,0 +1,12 @@
+# Reference for the no-world-loss control: trained from the video backbone, Motion Track targets off.
+include: [../base.yaml]
+objective:
+  disable_consequence: true
+optim:
+  lr: 2.0e-5
+  lr_agent: 4.0e-5
+  warmup_steps: 500
+  decay_steps: 2000
+train:
+  steps: 20000
+  milestones: [2000, 5000, 10000, 15000, 18000]
